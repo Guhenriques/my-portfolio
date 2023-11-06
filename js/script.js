@@ -73,14 +73,12 @@ $('#emailForm').submit(function (e) {
     success: function (response) {
       // Parse the JSON response
       const data = JSON.parse(response);
-
       // Display the success modal
       if (data.status === 'success') {
         $('#successModal').modal('show');
       } else {
         $('#failedModal').modal('show');
       }
-
       $('#emailForm')[0].reset();
     },
     complete: function () {
@@ -90,6 +88,7 @@ $('#emailForm').submit(function (e) {
       }, 1000);
     },
     error: function (xhr, status, error) {
+      console.log('HTTP Status Code:', xhr.status);
       $('.response-message').html('Error: ' + error);
     }
   });

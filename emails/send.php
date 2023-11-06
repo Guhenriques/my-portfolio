@@ -1,4 +1,5 @@
 <?php
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
@@ -6,6 +7,11 @@ use PHPMailer\PHPMailer\Exception;
 require 'src/Exception.php';
 require 'src/PHPMailer.php';
 require 'src/SMTP.php';
+require __DIR__ . '/../vendor/autoload.php';
+
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $name = $_POST['name'];
@@ -20,12 +26,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // SMTP Configuration
     $mail->SMTPDebug = SMTP::DEBUG_OFF; // Disable verbose debug output
     $mail->isSMTP();
-    $mail->Host = 'smtp.gmail.com'; // Set your SMTP server
+    $mail->Host = $_ENV['MAIL_HOST']; // Set your SMTP server
     $mail->SMTPAuth = true;
-    $mail->Username = 'guhenriques1398@gmail.com'; // SMTP username
-    $mail->Password = 'aveaqcsqyhltyopj'; // SMTP password
+    $mail->Username = $_ENV['MAIL_USERNAME']; // SMTP username
+    $mail->Password = $_ENV['SMTP_PASSWORD']; // SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; // Enable implicit TLS encryption
-    $mail->Port = 465; // TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+    $mail->Port = $_ENV['MAIL_PORT']; // TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     // Sender and recipient
     $mail->setFrom('guhenriques1398@gmail.com', 'Message through my Portfolio');
