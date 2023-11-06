@@ -5,8 +5,8 @@ Welcome to my GitHub repository for my personal portfolio website. This website 
 ## Table of Contents
 
 - [About Me](#about-me)
-- [Education](#education)
-- [Projects](#projects)
+- [Projects](#education)
+- [Skills](#skills)
 - [Contact](#contact)
 
 ## About Me
@@ -52,7 +52,7 @@ I'm proficient in a range of technologies and tools, including:
 
 I'd love to connect and collaborate.
 
-- LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/guhenriques-1398/)
-- Personal Website: [Your Website](https://www.gustavopereira.co.uk/)
+- LinkedIn: [Click here](https://www.linkedin.com/in/guhenriques-1398/)
+- Personal Website: [Click here](https://www.gustavopereira.co.uk/)
 
 Feel free to contact me for inquiries, collaboration opportunities, or just to say hello.
