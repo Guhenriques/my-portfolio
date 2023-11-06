@@ -52,8 +52,6 @@ I'm proficient in a range of technologies and tools, including:
 
 ## Contact
 
-I'd love to connect and collaborate.
-
 - LinkedIn: [Click here](https://www.linkedin.com/in/guhenriques-1398/)
 - Personal Website: [Click here](https://www.gustavopereira.co.uk/)
 
