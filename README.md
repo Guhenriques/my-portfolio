@@ -16,7 +16,9 @@ I'm Gustavo, a passionate full-stack developer. This portfolio website is a repr
 You can visit my live portfolio website [here](https://www.gustavopereira.co.uk/).
 
 ![Portfolio Screenshot 1](https://res.cloudinary.com/dvteazrgs/image/upload/v1699274513/portfolio1_lgchh2.png)
+
 ![Portfolio Screenshot 2](https://res.cloudinary.com/dvteazrgs/image/upload/v1699274513/portfolio2_w1ncii.png)
+
 ![Portfolio Screenshot 3](https://res.cloudinary.com/dvteazrgs/image/upload/v1699274550/portfolio3_h7p9bm.png)
 
 ## Projects
